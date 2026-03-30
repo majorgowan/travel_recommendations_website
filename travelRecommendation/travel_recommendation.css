@@ -110,13 +110,6 @@ label {
     width: 100px;
 }
 
-input[type="text"],
-input[type="number"],
-select {
-    width: 200px;
-    padding: 5px;
-}
-
 button {
     padding: 7px 15px;
     /* background-color: #4CAF50; */
@@ -131,28 +124,20 @@ button:hover {
     background-color: navy;
 }
 
-/* Basic CSS for the report section */
-h2 {
-    margin-top: 30px;
-}
-
-#report, #result {
-    padding: 10px;
-    max-width: 400px;
-    word-wrap: break-word;
-}
-
-#result {
-    height: 400px;
-    width: 500px;
+.team {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-#result img {
+.team-member {
     width: 200px;
-    height: 100px;
+    color: mediumpurple;
+    font-size: 20pt;
+    text-align: center;
+    margin: 0 20px;
 }
-  
+
+.team-member-info {
+    font-size: 16pt;
+    font-style: italic;
+}
