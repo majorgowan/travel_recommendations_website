@@ -12,7 +12,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 80px;
 }
 
 nav ul {
@@ -28,12 +28,30 @@ nav ul li {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: steelblue;
     font-weight: bold;
 }
 
-nav .mylogo {
+nav a:hover {
+    color: navy;
+}
+
+.mylogo {
     vertical-align: middle;
+    font-family: "Lobster Two", cursive;
+    font-size: 24px;
+    color: steelblue;
+    padding-right: 100px;
+}
+
+.mylogo img {
+    vertical-align: middle;
+}
+
+nav input {
+    border-radius: 9px;
+    font-size: 16px;
+    padding: 10px;
 }
 
 /* Basic CSS for the form elements */
@@ -42,12 +60,41 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: row;
     padding: 20px;
     /* background-image: url("360_F_320423287_aF7j40eRs1n6ljpEEWUcKzXENzo7ONso.jpg"); */
     background-image: url("beach-footsteps-sand-ocean-landscape-travel-nature-generative-ai-illustration-depicting-background-represents-381194220.png");
     background-size: cover;
     font-size: 20pt;
+}
+
+.blurb {
+    width: 60%;
     color: darkblue;
+}
+
+.blurb h2 {
+    color: steelblue;
+    font-family: "Lobster Two", cursive;
+}
+
+.blurb p {
+    padding: 20px 0;
+    line-height: 130%;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 60px 30px 0 0;
+}
+
+.social a {
+    text-decoration: none;
+    padding: 10px 0;
+    color: navy;
 }
 
 h1 {
@@ -72,14 +119,16 @@ select {
 
 button {
     padding: 7px 15px;
-    background-color: #4CAF50;
+    /* background-color: #4CAF50; */
+    background-color: steelblue;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    /* background-color: #45a049; */
+    background-color: navy;
 }
 
 /* Basic CSS for the report section */
