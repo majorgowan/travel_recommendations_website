@@ -66,7 +66,7 @@ body {
     /* background-image: url("360_F_320423287_aF7j40eRs1n6ljpEEWUcKzXENzo7ONso.jpg"); */
     background-image: url("beach-footsteps-sand-ocean-landscape-travel-nature-generative-ai-illustration-depicting-background-represents-381194220.png");
     background-size: cover;
-    font-size: 20pt;
+    font-size: 16pt;
 }
 
 .blurb {
@@ -140,4 +140,41 @@ button:hover {
 .team-member-info {
     font-size: 16pt;
     font-style: italic;
+}
+
+.contactblurb {
+    width: 30%;
+}
+
+.contactform {
+    width: 45%;
+}
+
+.contactform form {
+    display: flex;
+    flex-direction: column;
+    font-size: 16pt;
+}
+
+.contactform input {
+    border-radius: 9px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.contactform label {
+    color: navy;
+    width: 15%;
+}
+
+.contactform button {
+    border-radius: 9px;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.contactform textarea {
+    border-radius: 9px;
+    font-size: 16px;
+    padding: 10px;
 }
