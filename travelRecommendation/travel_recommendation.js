@@ -63,3 +63,20 @@ function searchButtonClicked() {
         const data = fetchData("temples");
     }
 }
+
+function clearButtonClicked() {
+    const blurb = document.getElementById("blurb");
+    const searchResults = document.getElementById("searchResults");
+    const resultsContent = document.getElementById("resultsContent");
+    const searchInput = document.getElementById("searchInput");
+
+    // clear the search bar
+    searchInput.value = "";
+
+    // reset searchResults and make invisible
+    resultsContent.innerHTML = "";
+    searchResults.style.display = "none";
+
+    // make blurb visible again
+    blurb.style.display = "block";
+}
