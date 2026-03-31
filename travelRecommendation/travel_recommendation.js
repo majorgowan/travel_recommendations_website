@@ -33,16 +33,25 @@ function makeRecommendationCard(datum) {
     card.classList.add("recommendationCard");
     let innerstring = `<h3>${datum.name}</h3>`;
 
+    // get current time
+    const now = new Date();
+
     // "countries" has different structure to other keys
     if ("cities" in datum) {
         for (const city of datum.cities) {
             innerstring += `<h5>${city.name}</h5>`;
             innerstring += `<img src='${city.imageUrl}'>`;
             innerstring += `<p>${city.description}</p>`;
+
+            const datestring = now.toLocaleTimeString("en-ca", {"timeZone": city.timezone});
+            innerstring += `<p>Current time at location: ${datestring}</p>`;
         }
     } else {
         innerstring += `<img src='${datum.imageUrl}'>`;
         innerstring += `<p>${datum.description}</p>`;
+
+        const datestring = now.toLocaleTimeString("en-ca", {"timeZone": datum.timezone});
+        innerstring += `<p>Current time at location: ${datestring}</p>`;
     }
 
     card.innerHTML = innerstring;
