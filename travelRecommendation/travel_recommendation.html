@@ -17,7 +17,7 @@
         <li><a href="./contact_us.html" id="contact">Contact Us</a></li>
         <li><input type="text" id="searchInput" placeholder="Enter a destination"></li>
         <li>
-            <button id='btnSearch'>Search</button>
+            <button id='btnSearch' onclick="searchButtonClicked()">Search</button>
             <button id='btnReset'>Reset</button>
         </li>
     </ul>
@@ -29,7 +29,7 @@
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-telegram"></i></a>
     </div>
-    <div class="blurb">
+    <div class="content" id="blurb">
         <h2>
             Marks' Travel Recommendations
         </h2>
@@ -46,7 +46,14 @@
             Take your time!  Explore!  We are here for you.
         </p>
     </div>
+    <div class="content" id="searchResults">
+        <h2>
+            Search Results
+        </h2>
+        <div id="resultsContent">
+        </div>
+    </div>
 </div>
-
+<script src="./travel_recommendation.js"></script>
 </body>
 </html>

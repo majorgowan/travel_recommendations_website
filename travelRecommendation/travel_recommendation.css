@@ -68,18 +68,25 @@ body {
     background-size: cover;
     font-size: 16pt;
 }
+#searchResults {
+    display: none;
+}
 
-.blurb {
+#blurb {
+    display: block;
+}
+
+.content {
     width: 60%;
     color: darkblue;
 }
 
-.blurb h2 {
+.content h2 {
     color: steelblue;
     font-family: "Lobster Two", cursive;
 }
 
-.blurb p {
+.content p {
     padding: 20px 0;
     line-height: 130%;
 }
@@ -142,39 +149,64 @@ button:hover {
     font-style: italic;
 }
 
-.contactblurb {
+#contactblurb {
     width: 30%;
 }
 
-.contactform {
+#contactform {
     width: 45%;
 }
 
-.contactform form {
+#contactform form {
     display: flex;
     flex-direction: column;
     font-size: 16pt;
 }
 
-.contactform input {
+#contactform input {
     border-radius: 9px;
     font-size: 16px;
     padding: 10px;
 }
 
-.contactform label {
+#contactform label {
     color: navy;
     width: 15%;
 }
 
-.contactform button {
+#contactform button {
     border-radius: 9px;
     margin-top: 8px;
     font-size: 16px;
 }
 
-.contactform textarea {
+#contactform textarea {
     border-radius: 9px;
     font-size: 16px;
     padding: 10px;
+}
+
+#resultsContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+}
+
+.recommendationCard {
+    border: 1px solid steelblue;
+    padding: 16px;
+    margin: 10px;
+    width: 400px;
+    font-size: 14pt;
+    font-style: italic;
+    color: darkslategrey;
+    background-color: rgba(240, 240, 240, 0.5);
+}
+
+.recommendationCard h3 {
+    margin-bottom: 5px;
+}
+
+.recommendationCard img {
+    width: 80%;
+    margin: 10px;
 }
